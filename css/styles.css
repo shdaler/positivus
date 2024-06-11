@@ -1,4 +1,18 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../fonts/SpaceGrotesk-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../fonts/SpaceGrotesk-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 /**
   Нормализация блочной модели
  */
@@ -141,20 +155,6 @@ svg * {
     scroll-behavior: auto !important;
   }
 }
-@font-face {
-  font-family: "Space Grotesk";
-  src: url("../fonts/SpaceGrotesk-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Space Grotesk";
-  src: url("../fonts/SpaceGrotesk-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
 :root {
   --color-dark: #191a23;
   --color-dark-alt: #292a32;
@@ -219,7 +219,7 @@ svg * {
 }
 
 body {
-  font-size: clamp(16px, 1.25vw, 18px);
+  font-size: clamp(16px, 0.9375vw, 18px);
   font-family: var(--font-family-base);
   font-weight: 400;
   line-height: 1.28;
@@ -249,22 +249,22 @@ h4 {
 
 h1,
 .h1 {
-  font-size: clamp(43px, 4.1666666667vw, 60px);
+  font-size: clamp(43px, 3.125vw, 60px);
 }
 
 h2,
 .h2 {
-  font-size: clamp(36px, 2.7777777778vw, 40px);
+  font-size: clamp(36px, 2.0833333333vw, 40px);
 }
 
 h3,
 .h3 {
-  font-size: clamp(26px, 2.0833333333vw, 30px);
+  font-size: clamp(26px, 1.5625vw, 30px);
 }
 
 h4,
 .h4 {
-  font-size: clamp(18px, 1.3888888889vw, 20px);
+  font-size: clamp(18px, 1.0416666667vw, 20px);
 }
 
 .field {
@@ -295,7 +295,7 @@ h4,
   --fieldInputHoverBgColor: var(--color-dark);
 }
 .field__label {
-  font-size: clamp(14px, 1.1111111111vw, 16px);
+  font-size: clamp(14px, 0.8333333333vw, 16px);
 }
 .field__input {
   width: 100%;
@@ -1145,7 +1145,7 @@ h4,
   }
 }
 .process__accordion-title {
-  font-size: clamp(18px, 2.0833333333vw, 30px);
+  font-size: clamp(18px, 1.5625vw, 30px);
   display: flex;
   align-items: center;
   -moz-column-gap: 25px;
